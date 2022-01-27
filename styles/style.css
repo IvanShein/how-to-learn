@@ -1,21 +1,89 @@
-* {border: 1px solid #FF0000;}
+/* * {border: 1px solid #FF0000;} */
 
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
+/* Shared classes */
 
 .logo {
   margin: 0;
   padding: 0;
   width: 183px;
 }
+
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  height: 32px;
+  z-index: 5;
+  background-image: url("../images/logo_place_header.svg");
+}
+
+.logo_place_footer {
+  height: 35px;
+  z-index: 5;
+  background-image: url("../images/logo_place_footer.svg");
+}
+
+.section-title {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.section-subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  width: 60%;
+  text-align: center;
+}
+
+.table {
+ display: flex;
+ flex-direction: column;
+ width: 1100px;
+}
+
+.table__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .table__cell {
+
+} */
+
+.table__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.table__text {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+/* Header*/
 
 .header {
   display: flex;
@@ -26,17 +94,6 @@
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
-  /* выше установили ограничения для секции */
-}
-
-.logo__place_header {
-  position: absolute;
-  top: 30px;
-  left: 64px;
-  height: 32px;
-  z-index: 5;
-  background-image: url("../images/logo_place_header.svg");
-  /* background-size: 183px 32px; */
 }
 
 .header__title {
@@ -51,6 +108,7 @@
   line-height: 96px;
   z-index: 4;
 }
+
 .header__subtitle {
   position: absolute;
   margin: 0;
@@ -89,12 +147,8 @@
   right: 0;
   z-index: 2;
   object-fit: cover;
-  /* background-image: url("../images/header-image.png");
-  background-size: auto 100%; */
-
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   margin: 0;
   padding: 0;
@@ -106,6 +160,8 @@
   background-color: #2f80ed;
   z-index: 1;
 }
+
+/* Description */
 
 .description {
   display: flex;
@@ -162,40 +218,233 @@
 
 .two-columns__span-accent {
     font-weight: bold;
+}
+
+/* Digits */
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.digits__section-title {
+  margin-bottom: 20px;
+}
+
+.digits__table {
+  margin: 0 auto;
+}
+
+.section-title_theme_light {
+  color: black;
+}
+
+.section-subtitle_theme_light {
+  color: black;
+}
+
+/* .table_theme_light {
+
+} */
+
+.table__cell_theme_light {
+  width: 250px;
+  margin-right: 0;
+  margin-top: 60px;
+}
+
+.table__heading_theme_light {
+  color: black;
+}
+
+.table__text_theme_light {
+  color: black;
+}
+
+/* Feynman */
+
+.feynman {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 890px;
+  align-items: center;
+  background: url("../images/feynman.png") bottom left/867px 637px no-repeat;
+  background-color: #f2f2f2;
+}
+
+.feynman__title {
+  z-index: 3;
+  margin: 100px 0 0 0;
+  padding: 0;
+  text-align: center;
+  font-size: 120px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.feynman__subtitle {
+  z-index: 2;
+  margin: 70px 0 0 0;
+  padding: 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+}
+
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  z-index: 1;
+  text-decoration: none;
+  color: #2f80ed;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
 
 }
 
-/* и элемента с модификатором вида ключ-значение */
+/* Kaufman */
+
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0;
+  background-color: #1f1f1f;
+  z-index: -2;
+}
+
+.kaufman__table {
+  margin: 0 auto;
+}
+
+.kaufman__section-title {
+  margin-bottom: 20px;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  height: 877px;
+  width: 877px;
+  object-fit: cover;
+  top: 0;
+  right: -210px;
+  z-index: -1;
+
+}
+
+.section-title_theme_dark {
+  color: #f2f2f2;
+}
+
+.section-subtitle_theme_dark {
+  color: #f2f2f2;
+}
+
+/* .table_theme_dark {
+
+} */
+
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
   margin-right: 0;
   margin-top: 80px;
-}
-
-
-
-.columns {
-
-}
-
-.column__content_copyright {
-
-}
-
-.column__content_info {
-
-}
-
-.column__content_social {
-
-}
-
-.footer_author {
-
-}
-
-.logo__place_footer {
-  z-index: 5;
-
+  color: #f2f2f2;
   }
+
+.table__heading_theme_dark {
+  color: #f2f2f2;
+}
+
+.table__text_theme_dark {
+  color: #f2f2f2;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 60px 0 40px;
+  min-height: 350px;
+  background-color: #1f1f1f;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-basis: 711px;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* .footer__column_content_social {
+
+} */
+
+.footer__author {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  margin: 18px 0 18px;
+  padding: 0;
+}
+
+.footer__column-heading {
+  margin: 0;
+  padding: 0;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 0 16px;
+  padding: 0;
+  color: #f2f2f2;
+}
+
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  padding-right: 10px;
+}
+
+.footer__column-link {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  text-decoration: none;
+}

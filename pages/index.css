@@ -55,9 +55,9 @@
 @import url(../blocks/khan/__buy-link/khan__buy-link.css);
 @import url(../blocks/kaufman/kaufman.css);
 @import url(../blocks/kaufman/__triangle/kaufman__triangle.css);
-@import url(../blocks/resourses/resourses.css);
-@import url(../blocks/resourses/__logo-zone/resourses__logo-zone.css);
-@import url(../blocks/resourses/__logo/resourses__logo.css);
+@import url(../blocks/resourсes/resourсes.css);
+@import url(../blocks/resourсes/__logo-zone/resourсes__logo-zone.css);
+@import url(../blocks/resourсes/__logo/resourсes__logo.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__columns/footer__columns.css);
 @import url(../blocks/footer/__column/footer__column.css);

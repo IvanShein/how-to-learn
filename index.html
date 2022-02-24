@@ -8,7 +8,7 @@
   <meta name="description" content="Техники эффективного обучения, на примере метода Фейнмана и принципов отучения Джоша Кауфмана">
   <meta name="keywords" content="Повысить эффективность обучения, быстрее учиться, принципы обучения Кауфмана">
   <meta name="author" content="Иван Шеин">
-  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
@@ -39,7 +39,7 @@
 
       <section class="description">
 
-        <div class="two-columns">
+        <article class="two-columns">
           <h2 class="two-columns__brief">Главные проблемы в обучении</h2>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
@@ -57,7 +57,7 @@
               эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.
             </p>
           </div>
-        </div>
+        </article>
 
       </section>
 
@@ -140,21 +140,24 @@
   <h2 class="section-title">Видео нa TED</h2>
   <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
 
-  <div class="video__iframes">
-    <iframe class="video__iframe"
-      src="https://www.youtube.com/embed/arj7oStGLkU"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-
-    <iframe class="video__iframe"
-      src="https://www.youtube.com/embed/5MgBikgcWnY"
-      title="YouTube video player"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <ul class="video__iframes">
+    <li>
+      <iframe class="video__iframe"
+        src="https://www.youtube.com/embed/arj7oStGLkU"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </li>
+    <li>
+      <iframe class="video__iframe"
+        src="https://www.youtube.com/embed/5MgBikgcWnY"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </li>
+  </ul>
 
 </section>
 
@@ -183,7 +186,7 @@
 
       <section class="feynman">
         <h2 id="feynman" class="feynman__title">Метод Фейнмана</h2>
-        <h3 class="feynman__subtitle">Выучить и не забыть.</h3>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
         <a class="feynman__link" href="#">Подробнее &rarr;</a>
       </section>
 
@@ -375,26 +378,26 @@
 
 <!-- Section: Resourses -->
 
-<section class="resourses">
+<section class="resourсes">
 
   <h2 class="section-title">Полезные ресурсы</h2>
   <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
 
-  <ul class="resourses__logo-zone">
+  <ul class="resourсes__logo-zone">
     <li>
-      <a href="#"><img class="resourses__logo" src="./images/resources-arzamas.svg" alt=""></a>
+      <a href="#"><img class="resourсes__logo" src="./images/resources-arzamas.svg" alt="Логотип Арзамас"></a>
     </li>
 
     <li>
-      <a href="#"><img class="resourses__logo" src="./images/resources-n1.svg" alt=""></a>
+      <a href="#"><img class="resourсes__logo" src="./images/resources-n1.svg" alt="Логотип Н плюс 1"></a>
     </li>
 
     <li>
-      <a href="#"><img class="resourses__logo" src="./images/resources-strelka.svg" alt=""></a>
+      <a href="#"><img class="resourсes__logo" src="./images/resources-strelka.svg" alt="Логотип Стрелка"></a>
     </li>
 
     <li>
-      <a href="#"><img class="resourses__logo" src="./images/resources-polka.svg" alt=""></a>
+      <a href="#"><img class="resourсes__logo" src="./images/resources-polka.svg" alt="Логотип Полка"></a>
     </li>
   </ul>
 
@@ -407,7 +410,7 @@
   <div class="footer__columns">
     <div class="footer__column footer__column_content_copyright">
       <div class="logo logo_place_footer"></div>
-      <p class="footer__author">&copy;2022. Иван Шеин</p>
+      <p class="footer__author">&copy; 2022. Иван Шеин</p>
     </div>
     <div class="footer__column footer__column_content_info">
       <h3 class="footer__column-heading">О Практикуме</h3>

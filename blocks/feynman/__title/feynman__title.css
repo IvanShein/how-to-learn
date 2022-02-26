@@ -6,4 +6,6 @@
   font-size: 120px;
   font-weight: bold;
   line-height: 1.15;
+  max-width: 648px;
+  width: 100%;
 }

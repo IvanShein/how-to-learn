@@ -5,6 +5,8 @@
   line-height: 30px;
   text-decoration: none;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
 }
 
 .footer__column-link:hover {
